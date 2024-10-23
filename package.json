@@ -1,0 +1,16 @@
+{
+  "name": "slsv4-offline",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "serverless": "^4.4.7",
+    "serverless-offline": "^14.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0"
+  }
+}

@@ -1,0 +1,20 @@
+service: my-service
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+
+functions:
+  hello:
+    events:
+      - http:
+          method: get
+          path: hello
+    handler: handler.hello
+custom:
+  serverless-offline:
+    disableCookieValidation: true
